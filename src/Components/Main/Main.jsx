@@ -26,18 +26,22 @@ export const Main = () => {
       {
         // If the search bar is empty and the region filter is set to "All", then display all countries.
         search === "" && region === ""
-          ? data.map((country) => {
-              return (
-                <Country
-                  key={country.name.common}
-                  flag={country.flags.png}
-                  name={country.name.common}
-                  population={country.population}
-                  region={country.region}
-                  capital={country.capital}
-                />
-              );
-            })
+          ? data
+              .sort((a, b) => {
+                return a.name.common.localeCompare(b.name.common);
+              })
+              .map((country) => {
+                return (
+                  <Country
+                    key={country.name.common}
+                    flag={country.flags.png}
+                    name={country.name.common}
+                    population={country.population}
+                    region={country.region}
+                    capital={country.capital}
+                  />
+                );
+              })
           : data
               // Filter the results based on the search bar and region filter.
               .filter((country) => {
@@ -49,6 +53,9 @@ export const Main = () => {
                 return country.region
                   .toLowerCase()
                   .includes(region.toLowerCase());
+              })
+              .sort((a, b) => {
+                return a.name.common.localeCompare(b.name.common);
               })
               // Display the filtered results.
               .map((country) => {

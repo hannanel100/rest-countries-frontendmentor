@@ -48,8 +48,7 @@ svg {
 */
 input,
 button,
-textarea,
-select {
+textarea {
   font: inherit;
 }
 /*
@@ -93,6 +92,18 @@ h6 {
   color: var(--clr-text-light);
 }
 .light__card {
-  background-color: var(--clr-bg-card-light);
+  background-color: var(--clr-bg-card-light) !important;
   color: var(--clr-text-light);
 }
+
+/* .option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: #f2f2f2;
+} */

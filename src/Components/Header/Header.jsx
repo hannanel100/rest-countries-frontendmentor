@@ -10,7 +10,7 @@ export const Header = () => {
       role="banner"
     >
       <div className="container mx-auto flex items-center justify-between px-4 py-3 h-full">
-        <h1 className="text-2xl font-bold">Where in the world?</h1>
+        <h1 className="text-2xl font-[800]">Where in the world?</h1>
         <div className="flex gap-4 items-center justify-between">
           <FontAwesomeIcon
             icon={darkToggle ? faSun : faMoon}

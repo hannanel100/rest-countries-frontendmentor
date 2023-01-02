@@ -7,7 +7,7 @@ export const FilterContainer = () => {
   const { darkToggle } = useContext(ThemeContext);
   return (
     <div
-      className={`container mx-auto flex flex-wrap gap-4 justify-between w-full h-full ${
+      className={`container mx-auto flex flex-col md:flex-row gap-4 justify-between align-center w-11/12 md:w-full h-full ${
         darkToggle ? "dark" : "light"
       }`}
     >

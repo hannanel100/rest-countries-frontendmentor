@@ -17,7 +17,7 @@ export const Main = () => {
   }
   return (
     <div
-      className={`flex flex-wrap justify-center gap-16 mx-auto h-full ${
+      className={`flex flex-wrap justify-center gap-[75px] mx-auto h-full ${
         darkToggle ? "dark" : "light"
       }`}
     >

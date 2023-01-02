@@ -16,11 +16,11 @@ export const Search = () => {
   }
   return (
     <form
-      className="relative rounded-md shadow-sm w-full md:w-[30rem]"
+      className="relative rounded-md shadow-sm w-11/12 md:w-[30rem]"
       onSubmit={(e) => e.preventDefault()}
     >
       <input
-        className={`form-input py-2 pl-10 pr-4 block w-full leading-5 w-full rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5 ${
+        className={`form-input py-2 pl-10 pr-4 block w-full h-14 leading-5 rounded-md  sm:text-sm sm:leading-5 ${
           darkToggle ? "dark__card" : "light__card"
         }`}
         placeholder="Search..."

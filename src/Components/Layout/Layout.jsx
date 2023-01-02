@@ -7,7 +7,11 @@ export const Layout = () => {
   const { darkToggle } = useContext(ThemeContext);
   const history = useLocation();
   return (
-    <div className={`h-screen ${darkToggle ? "dark" : "light"}`}>
+    <div
+      className={`h-screen ${
+        darkToggle ? "dark" : "light"
+      } flex flex-col gap-12`}
+    >
       <Header />
       <Outlet />
     </div>

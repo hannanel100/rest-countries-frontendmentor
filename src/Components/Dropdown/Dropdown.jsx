@@ -21,7 +21,7 @@ export const Dropdown = () => {
       onChange={handleRegionSelect}
       className={`w-52 rounded-md ${
         darkToggle ? "dark__card" : "light__card"
-      } `}
+      } px-6 py-[18px]`}
       aria-label="Filter by region"
       value={region}
     >

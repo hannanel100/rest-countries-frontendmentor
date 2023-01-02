@@ -18,7 +18,6 @@ export const Dropdown = () => {
     <select
       name="region"
       id="region"
-      placeholder="Filter by region"
       onChange={handleRegionSelect}
       className={`w-52 rounded-md ${
         darkToggle ? "dark__card" : "light__card"

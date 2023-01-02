@@ -19,7 +19,7 @@ export const CountryDetails = () => {
     country
   );
   return (
-    <div
+    <main
       className={`flex flex-col justify-center mx-auto w-5/6 h-4/5 mt-4 overflow-hidden ${
         darkToggle ? "dark" : "light"
       }`}
@@ -118,6 +118,6 @@ export const CountryDetails = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };

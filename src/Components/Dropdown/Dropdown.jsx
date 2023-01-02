@@ -20,6 +20,7 @@ export const Dropdown = () => {
       className={`w-52 rounded-md ${
         darkToggle ? "dark__card" : "light__card"
       } `}
+      ariaLabel="Filter by region"
     >
       <option value="" selected className="light__card">
         Filter by Region

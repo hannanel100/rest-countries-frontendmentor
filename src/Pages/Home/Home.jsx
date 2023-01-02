@@ -7,11 +7,11 @@ export const Home = () => {
   const { darkToggle } = useContext(ThemeContext);
 
   return (
-    <div
+    <main
       className={`flex flex-col gap-12 ${darkToggle ? "dark" : "light"} pt-8`}
     >
       <FilterContainer />
       <Main />
-    </div>
+    </main>
   );
 };

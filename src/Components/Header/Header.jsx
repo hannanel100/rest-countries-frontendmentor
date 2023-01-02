@@ -7,6 +7,7 @@ export const Header = () => {
   return (
     <header
       className={` shadow-md h-20 ${darkToggle ? "dark__card" : "light__card"}`}
+      role="banner"
     >
       <div className="container mx-auto flex items-center justify-between px-4 py-3 h-full">
         <h1 className="text-2xl font-bold">Where in the world?</h1>

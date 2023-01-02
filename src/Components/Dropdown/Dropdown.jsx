@@ -2,8 +2,11 @@ import { useContext } from "react";
 import { useDispatch } from "react-redux";
 import { setRegion } from "../../redux/reducers";
 import { ThemeContext } from "../../Context/theme";
+import { useSelector } from "react-redux";
 
 export const Dropdown = () => {
+  const region = useSelector((state) => state.search.region);
+
   const dispatch = useDispatch();
   const { darkToggle } = useContext(ThemeContext);
   const handleRegionSelect = (e) => {
@@ -21,9 +24,10 @@ export const Dropdown = () => {
         darkToggle ? "dark__card" : "light__card"
       } `}
       aria-label="Filter by region"
+      value={region}
     >
-      <option value="" selected className="light__card">
-        Filter by Region
+      <option value={region} disabled className="light__card">
+        {region === "" ? "Filter by Region" : region}
       </option>
       <option value="Africa" className="light__card">
         Africa
